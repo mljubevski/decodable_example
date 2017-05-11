@@ -27,7 +27,10 @@ class ViewController: UIViewController {
                     
                 case .success(let value):
                     
-                    print(value)
+                    let gamesData = try? GamesData.decode(value)
+                    print(gamesData!)
+                    
+                    
                     
                 }
             

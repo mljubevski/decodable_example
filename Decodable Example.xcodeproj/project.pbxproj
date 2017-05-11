@@ -13,6 +13,7 @@
 		07FC7A311EC4801800E1A91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FC7A301EC4801800E1A91B /* Assets.xcassets */; };
 		07FC7A341EC4801800E1A91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC7A321EC4801800E1A91B /* LaunchScreen.storyboard */; };
 		07FC7A3C1EC4810300E1A91B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC7A3B1EC4810300E1A91B /* Game.swift */; };
+		07FC7A3F1EC4837300E1A91B /* GamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC7A3E1EC4837300E1A91B /* GamesData.swift */; };
 		973DD7F06DED3855AB4206F4 /* Pods_Decodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE4BDD0C4A64755D46D4AC /* Pods_Decodable_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		07FC7A331EC4801800E1A91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FC7A351EC4801800E1A91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FC7A3B1EC4810300E1A91B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		07FC7A3E1EC4837300E1A91B /* GamesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesData.swift; sourceTree = "<group>"; };
 		2EB122E25F4F9D139F0FA4D4 /* Pods-Decodable Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decodable Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example.release.xcconfig"; sourceTree = "<group>"; };
 		982E07C60A59E1158B3384CB /* Pods-Decodable Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decodable Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EBCE4BDD0C4A64755D46D4AC /* Pods_Decodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Decodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 		07FC7A3D1EC4810700E1A91B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				07FC7A3E1EC4837300E1A91B /* GamesData.swift */,
 				07FC7A3B1EC4810300E1A91B /* Game.swift */,
 			);
 			name = Models;
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FC7A2C1EC4801800E1A91B /* ViewController.swift in Sources */,
+				07FC7A3F1EC4837300E1A91B /* GamesData.swift in Sources */,
 				07FC7A3C1EC4810300E1A91B /* Game.swift in Sources */,
 				07FC7A2A1EC4801800E1A91B /* AppDelegate.swift in Sources */,
 			);
