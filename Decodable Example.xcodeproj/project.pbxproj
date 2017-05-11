@@ -12,6 +12,8 @@
 		07FC7A2F1EC4801800E1A91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC7A2D1EC4801800E1A91B /* Main.storyboard */; };
 		07FC7A311EC4801800E1A91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FC7A301EC4801800E1A91B /* Assets.xcassets */; };
 		07FC7A341EC4801800E1A91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FC7A321EC4801800E1A91B /* LaunchScreen.storyboard */; };
+		07FC7A3C1EC4810300E1A91B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC7A3B1EC4810300E1A91B /* Game.swift */; };
+		973DD7F06DED3855AB4206F4 /* Pods_Decodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE4BDD0C4A64755D46D4AC /* Pods_Decodable_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		07FC7A301EC4801800E1A91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FC7A331EC4801800E1A91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FC7A351EC4801800E1A91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FC7A3B1EC4810300E1A91B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2EB122E25F4F9D139F0FA4D4 /* Pods-Decodable Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decodable Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example.release.xcconfig"; sourceTree = "<group>"; };
+		982E07C60A59E1158B3384CB /* Pods-Decodable Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decodable Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EBCE4BDD0C4A64755D46D4AC /* Pods_Decodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Decodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973DD7F06DED3855AB4206F4 /* Pods_Decodable_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				07FC7A281EC4801800E1A91B /* Decodable Example */,
 				07FC7A271EC4801800E1A91B /* Products */,
+				6261AF95417EBE2E89C4678D /* Pods */,
+				308D3FD2E6DE58F3E2945CA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,38 @@
 			children = (
 				07FC7A291EC4801800E1A91B /* AppDelegate.swift */,
 				07FC7A2B1EC4801800E1A91B /* ViewController.swift */,
+				07FC7A3D1EC4810700E1A91B /* Models */,
 				07FC7A2D1EC4801800E1A91B /* Main.storyboard */,
 				07FC7A301EC4801800E1A91B /* Assets.xcassets */,
 				07FC7A321EC4801800E1A91B /* LaunchScreen.storyboard */,
 				07FC7A351EC4801800E1A91B /* Info.plist */,
 			);
 			path = "Decodable Example";
+			sourceTree = "<group>";
+		};
+		07FC7A3D1EC4810700E1A91B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07FC7A3B1EC4810300E1A91B /* Game.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		308D3FD2E6DE58F3E2945CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBCE4BDD0C4A64755D46D4AC /* Pods_Decodable_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6261AF95417EBE2E89C4678D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				982E07C60A59E1158B3384CB /* Pods-Decodable Example.debug.xcconfig */,
+				2EB122E25F4F9D139F0FA4D4 /* Pods-Decodable Example.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07FC7A381EC4801800E1A91B /* Build configuration list for PBXNativeTarget "Decodable Example" */;
 			buildPhases = (
+				4F741A8ED38733C8E7B746EE /* [CP] Check Pods Manifest.lock */,
 				07FC7A221EC4801800E1A91B /* Sources */,
 				07FC7A231EC4801800E1A91B /* Frameworks */,
 				07FC7A241EC4801800E1A91B /* Resources */,
+				64D7996DEA0506E87A42AE11 /* [CP] Embed Pods Frameworks */,
+				D4C808D61013ED9610466F43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F741A8ED38733C8E7B746EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64D7996DEA0506E87A42AE11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C808D61013ED9610466F43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Decodable Example/Pods-Decodable Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07FC7A221EC4801800E1A91B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				07FC7A2C1EC4801800E1A91B /* ViewController.swift in Sources */,
+				07FC7A3C1EC4810300E1A91B /* Game.swift in Sources */,
 				07FC7A2A1EC4801800E1A91B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +348,7 @@
 		};
 		07FC7A391EC4801800E1A91B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982E07C60A59E1158B3384CB /* Pods-Decodable Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPE3SNHLX8;
@@ -274,6 +362,7 @@
 		};
 		07FC7A3A1EC4801800E1A91B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB122E25F4F9D139F0FA4D4 /* Pods-Decodable Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPE3SNHLX8;
@@ -304,6 +393,7 @@
 				07FC7A3A1EC4801800E1A91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
